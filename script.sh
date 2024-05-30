@@ -11,5 +11,5 @@ sudo echo "hello class"> /var/www/html/index.html
 ## sudo apt update -y
 ## sudo apt install apache2
 ## sudo systemctl restart apache2
-##  sudo systemctl enable apache
+## sudo systemctl enable apache
 ## sudo echo "this is a sample webpage of our installation" > /var/www/html/index.html

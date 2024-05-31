@@ -4,7 +4,7 @@ resource "aws_instance" "ubuntu_instance" {
   ami                    = "ami-04b70fa74e45c3917" 
   instance_type          = "t2.micro"   
   key_name               = "practiceKP.pem"
-  subnet_id              = "subnet-025f84db415187ac1"
+  subnet_id              = "subnet-028045d27c7427b76"
   security_groups        = ["sg-0017a2641bfebf228"]
 
   user_data = <<-EOF

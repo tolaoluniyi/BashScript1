@@ -9,10 +9,12 @@ resource "aws_instance" "ubuntu_instance" {
 
   user_data = <<-EOF
               #!/bin/bash
-              apt-get update
-              apt-get install -y apache2
-              systemctl start apache2
-              chmod +x /path/to/create_files.sh
-              /path/to/create_files.sh
+              yum update -y
+              yum install -y httpd
+              service httpd start
+              chkconfig httpd on
+              echo "Hello World Welcome to Cloud Convo. This is server 1"
+              /var/www/html/index.html
+
               EOF
 }
